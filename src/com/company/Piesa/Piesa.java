@@ -7,6 +7,7 @@ public abstract class Piesa {
 
     protected Point pozitiePeTabla = null;
     protected int color ;
+    protected int id;
 
     public abstract List<Point> getValidMovmentPozition(Tabla tabla);
 

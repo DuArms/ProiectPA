@@ -2,6 +2,9 @@ package com.company.Piesa;
 
 import com.company.Piesa.Point;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Tabla {
     public  static int  max_SIZE = 8;
     public int[][] table;
@@ -22,5 +25,14 @@ public class Tabla {
             }
             System.out.println();
         }
+    }
+
+
+    public  void initGame(){
+
+        List<Piesa> whitePiece = new ArrayList<>();
+        List<Piesa> blackPiece = new ArrayList<>();
+
+
     }
 }

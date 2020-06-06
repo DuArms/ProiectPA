@@ -8,7 +8,7 @@ public class Cal extends Piesa {
     static final int L = 2;
     static final int l = 1;
 
-    public Cal(Point pozitiePeTabla, boolean color) {
+    public Cal(Point pozitiePeTabla, int color) {
         super(pozitiePeTabla, color);
     }
 

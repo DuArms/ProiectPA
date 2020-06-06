@@ -13,7 +13,7 @@ public class Main {
 	//new Nebun().getValidMovmentPozition(new Tabla());
    // new Cal().getValidMovmentPozition(new Tabla());
     //    new Regina().getValidMovmentPozition(new Tabla());
-        new Pion(new Point(0,0),1).getValidMovmentPozition(new Tabla());
+        new Rege(new Point(4,4),1).getValidMovmentPozition(new Tabla());
     }
 
 
