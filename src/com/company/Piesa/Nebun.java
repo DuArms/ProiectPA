@@ -4,13 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Nebun extends Piesa {
+    public Nebun(Point startPoint) {
+        pozitiePeTabla = startPoint;
+    }
+
     @Override
     public List<Point> getValidMovmentPozition(Tabla tabla) {
-        pozitiePeTabla = new Point(4, 3);
-        tabla.table[pozitiePeTabla.getX()][pozitiePeTabla.getY()] = 7;
         List<Point> validMoves = new ArrayList<>();
+        mutareNebun(tabla, validMoves);
+//
+//        System.out.println(validMoves);
+//        tabla.print();
+        return validMoves;
+    }
 
-        tabla.table[2][1] = 2;
+    private void mutareNebun(Tabla tabla, List<Point> validMoves) {
         boolean allIsGood = true;
         for (int i = 1; i < Tabla.max_SIZE - pozitiePeTabla.getX() && allIsGood; i++) {
             Point p = new Point(pozitiePeTabla.getX() + i, pozitiePeTabla.getY() + i);
@@ -32,10 +40,6 @@ public class Nebun extends Piesa {
             Point p = new Point(pozitiePeTabla.getX() - i, pozitiePeTabla.getY() + i);
             allIsGood = copFor(tabla, p, validMoves);
         }
-
-        System.out.println(validMoves);
-        tabla.print();
-        return validMoves;
     }
 
     public boolean copFor(Tabla tabla, Point p, List<Point> validMoves) {
