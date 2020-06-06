@@ -7,6 +7,7 @@ public class Pion extends Piesa {
 
     public Pion(Point pozitiePeTabla, int color) {
         super(pozitiePeTabla, color);
+        id = color;
     }
 
     @Override

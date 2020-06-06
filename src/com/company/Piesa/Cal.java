@@ -9,7 +9,9 @@ public class Cal extends Piesa {
     static final int l = 1;
 
     public Cal(Point pozitiePeTabla, int color) {
+
         super(pozitiePeTabla, color);
+        id = 4 * color;
     }
 
     @Override

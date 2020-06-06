@@ -11,6 +11,7 @@ import java.util.List;
 public class Tura extends Piesa {
     public Tura(Point pozitiePeTabla, int color) {
         super(pozitiePeTabla, color);
+        id = 7 * color;
     }
 
     @Override

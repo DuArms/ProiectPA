@@ -5,7 +5,9 @@ import java.util.List;
 
 public class Nebun extends Piesa {
     public Nebun(Point pozitiePeTabla, int color) {
+
         super(pozitiePeTabla, color);
+        id = 5 * color;
     }
 
     @Override

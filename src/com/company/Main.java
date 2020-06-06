@@ -9,11 +9,13 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-	//new Tura().getValidMovmentPozition(new Tabla());
-	//new Nebun().getValidMovmentPozition(new Tabla());
-   // new Cal().getValidMovmentPozition(new Tabla());
-    //    new Regina().getValidMovmentPozition(new Tabla());
-        new Rege(new Point(4,4),1).getValidMovmentPozition(new Tabla());
+        //new Tura().getValidMovmentPozition(new Tabla());
+        //new Nebun().getValidMovmentPozition(new Tabla());
+        //new Cal().getValidMovmentPozition(new Tabla());
+        //new Regina().getValidMovmentPozition(new Tabla());
+      //  new Rege(new Point(4, 4), 1).getValidMovmentPozition(new Tabla());
+
+        new Tabla().initGame();
     }
 
 

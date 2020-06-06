@@ -8,6 +8,7 @@ public class Regina extends Piesa {
 
     public Regina(Point pozitiePeTabla, int color) {
         super(pozitiePeTabla, color);
+        id = 8 * color;
     }
 
     @Override
