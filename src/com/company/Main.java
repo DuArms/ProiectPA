@@ -15,7 +15,11 @@ public class Main {
         //new Regina().getValidMovmentPozition(new Tabla());
       //  new Rege(new Point(4, 4), 1).getValidMovmentPozition(new Tabla());
 
-        new Tabla().initGame();
+      Tabla t =  new Tabla();
+
+      t.initGame();
+
+      t.movePiesa(2,5);
     }
 
 
