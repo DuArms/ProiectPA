@@ -12,7 +12,8 @@ public class Main {
 	//new Tura().getValidMovmentPozition(new Tabla());
 	//new Nebun().getValidMovmentPozition(new Tabla());
    // new Cal().getValidMovmentPozition(new Tabla());
-        new Regina().getValidMovmentPozition(new Tabla());
+    //    new Regina().getValidMovmentPozition(new Tabla());
+        new Pion(new Point(0,0),1).getValidMovmentPozition(new Tabla());
     }
 
 

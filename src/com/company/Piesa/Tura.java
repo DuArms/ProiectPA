@@ -9,8 +9,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Tura extends Piesa {
-    public Tura(Point startPoint) {
-    pozitiePeTabla = startPoint;
+    public Tura(Point pozitiePeTabla, int color) {
+        super(pozitiePeTabla, color);
     }
 
     @Override

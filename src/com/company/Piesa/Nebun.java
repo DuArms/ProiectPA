@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Nebun extends Piesa {
-    public Nebun(Point startPoint) {
-        pozitiePeTabla = startPoint;
+    public Nebun(Point pozitiePeTabla, int color) {
+        super(pozitiePeTabla, color);
     }
 
     @Override

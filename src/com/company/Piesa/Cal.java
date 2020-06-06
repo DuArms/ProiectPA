@@ -4,8 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cal extends Piesa {
+
     static final int L = 2;
     static final int l = 1;
+
+    public Cal(Point pozitiePeTabla, boolean color) {
+        super(pozitiePeTabla, color);
+    }
+
     @Override
     public List<Point> getValidMovmentPozition(Tabla tabla) {
 
@@ -23,7 +29,7 @@ public class Cal extends Piesa {
 
 //        System.out.println(validMoves);
 //        tabla.print();
-        return null;
+        return validMoves;
     }
 
     private void move(Tabla tabla, List<Point> validMoves, Point p1, Point p2) {
